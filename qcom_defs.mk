@@ -18,3 +18,4 @@ ifeq ($(TARGET_BOARD_SUFFIX),_515)
     UM_5_15_FAMILY += bengal
 endif
 UM_6_1_FAMILY := pineapple volcano
+UM_6_6_FAMILY := sun

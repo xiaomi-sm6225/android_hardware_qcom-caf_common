@@ -1,3 +1,7 @@
+# Linker config
+PRODUCT_VENDOR_LINKER_CONFIG_FRAGMENTS += \
+    $(LOCAL_PATH)/linker.config.json
+
 # RFS APQ GNSS symlinks
 PRODUCT_PACKAGES += \
     rfs_apq_gnss_hlos_symlink \
@@ -33,6 +37,15 @@ PRODUCT_PACKAGES += \
     rfs_mdm_mpss_readonly_vendor_firmware_symlink \
     rfs_mdm_mpss_readwrite_symlink \
     rfs_mdm_mpss_shared_symlink
+
+# RFS MDM OIS symlinks
+PRODUCT_PACKAGES += \
+    rfs_mdm_ois_hlos_symlink \
+    rfs_mdm_ois_ramdumps_symlink \
+    rfs_mdm_ois_readonly_firmware_symlink \
+    rfs_mdm_ois_readonly_vendor_firmware_symlink \
+    rfs_mdm_ois_readwrite_symlink \
+    rfs_mdm_ois_shared_symlink
 
 # RFS MDM SLPI symlinks
 PRODUCT_PACKAGES += \
@@ -87,6 +100,15 @@ PRODUCT_PACKAGES += \
     rfs_msm_mpss_readonly_vendor_firmware_symlink \
     rfs_msm_mpss_readwrite_symlink \
     rfs_msm_mpss_shared_symlink
+
+# RFS MSM OIS symlinks
+PRODUCT_PACKAGES += \
+    rfs_msm_ois_hlos_symlink \
+    rfs_msm_ois_ramdumps_symlink \
+    rfs_msm_ois_readonly_firmware_symlink \
+    rfs_msm_ois_readonly_vendor_firmware_symlink \
+    rfs_msm_ois_readwrite_symlink \
+    rfs_msm_ois_shared_symlink
 
 # RFS MSM SLPI symlinks
 PRODUCT_PACKAGES += \
